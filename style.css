@@ -4,15 +4,16 @@
     --width: 95%;
     --max-width: 1600px;
     --border-radius: 20px;
+    --index: calc(1vw + 1vh);
+	--color-header: #f4efec;
+	--color-text: #cdc6c3;
+	--gallery-gap: calc(var(--index) * 7.5)
 }
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: white;
-    font-weight: 400;
-    letter-spacing: -.03em;
     -webkit-font-smoothing: antialiased;
     text-decoration: none;
     list-style: none;
@@ -30,14 +31,17 @@ h1 {
 
 }
 
-main {
+/* main {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 2rem 0;
-}
+} */
 
 #hero {
+    color: white;
+    font-weight: 400;
+    letter-spacing: -.03em;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -113,6 +117,20 @@ nav ul li a {
     grid-column: span 5;
     margin-bottom: 1rem;
     opacity: .8;
+}
+
+/* Main svg image */
+.image__container {
+    position: relative;
+    width: 100%;
+    padding-top: 40%;
+    height: 0;
+}
+
+.main__hero__image {
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .bottom__div {
@@ -219,4 +237,70 @@ nav ul li a {
     100% {
         transform: translateX(-50%);
     }
+}
+
+#about {
+    color: white;
+    font-weight: 400;
+    letter-spacing: -.03em;
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.about__container {
+    position: relative;
+    top: -5rem;
+    width: var(--width);
+    max-width: var(--max-width);
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.about__text {
+    grid-column: span 5;
+    padding-left: 2rem;
+}
+
+
+
+/* Portfolio */
+
+/* will-change */
+.gallery {
+	display: flex;
+	padding: calc(var(--index) * 8) 0;
+}
+.gallery > * {
+	flex: 1;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+.gallery__item {
+	max-width: calc(var(--index) * 21);
+	margin-bottom: var(--gallery-gap);
+	max-height: 180vh;
+	border-radius: 8px;
+}
+.gallery__left {
+	margin-top: calc(var(--gallery-gap) * 1.75);
+}
+.gallery__right .gallery__item {
+	margin: 0;
+	margin-top: var(--gallery-gap);
+}
+.text-block {
+	color: var(--color-text);
+	position: relative;
+}
+.text-block__h {
+	font-size: 2rem;
+	line-height: 2.4rem;
+	color: var(--color-header);
+	margin-bottom: 1.5rem;
+}
+.text-block__p {
+	line-height: 1.75;
 }

@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
+
 <body>
     <main>
         <section id="hero">
             <div class="container">
                 <div class="nav__container">
-    
+
                     <nav>
                         <ul>
                             <li><a href="#">Services</a></li>
@@ -28,18 +30,40 @@
                     </div>
                     <h1 class="hero__header">I enable rapid growth through creative thinking</h1>
                     <p class="hero__intro">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis impedit nostrum suscipit! Porro, ut aspernatur molestias consequatur repellendus perspiciatis similique enim aperiam eum. Accusantium nisi adipisci ullam error magni natus?
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis impedit nostrum suscipit! Porro,
+                        ut aspernatur molestias consequatur repellendus perspiciatis similique enim aperiam eum.
+                        Accusantium nisi adipisci ullam error magni natus?
                     </p>
                 </div>
                 <div class="image__container">
-                    <svg width="100%" height="100%" viewBox="0 0 100 40">
+                    <svg class="main__hero__image" width="100%" height="100%" viewBox="0 0 100 40">
                         <clipPath id="border">
-                            <path id="main__image__path"
-                            d="">
-    
+                            <path id="main__image__path" d="M 7 5
+                                        L 85 5
+                                        A 2.5 2.5 0 0 0 87.5 2.5
+                                        A 2.5 2.5 0 0 1 90 0
+                                        L 97.5 0
+                                        A 2.5 2.5 0 0 1 100 2.5
+                                        L 100 25
+                                        A 2.5 2.5 0 0 1 97.5 27.5
+                                        L 80 27.5
+                                        A 2.5 2.5 0 0 0 77.5 30
+                                        L 77.5 35
+                                        A 2.5 2.5 0 0 1 75 37.5
+                                        L 10 37.5
+                                        A 2.5 2.5 0 0 1 7.5 35
+                                        L 7.7 20
+                                        A 2.5 2.5 0 0 0 5 17.5
+                                        L 2.5 17.5
+                                        A 2.5 2.5 0 0 1 0 15
+                                        L 0 7.5
+                                        A 2.5 2.5 0 0 1 2.5 5
+                                        ">
+
                             </path>
                         </clipPath>
-                        <image clip-path="ürl(#border)" width="100%" height="100%" xlink:href="./assets/images/slider1.jpg"></image>
+                        <image clip-path="url(#border)" preserveAspectRatio="xMidYMid slice" width="100%" height="100%"
+                            xlink:href="./assets/images/slider1.jpg"></image>
                     </svg>
                 </div>
                 <div class="carousel">
@@ -79,13 +103,58 @@
                 </div>
             </div>
         </section>
-        <section class="about">
+        <section id="about">
             <div class="about__container">
                 <div class="about__text">
                     <h2>I create without the need for coding to give ambitious brands the upper hand</h2>
                 </div>
             </div>
         </section>
+
+
+
+        <div class="">
+            <div class="">
+                <div class="portfolio">
+                    <div class="portfolio__container">
+                        <main class="gallery">
+
+                            <div data-speed=".9" class="gallery__left">
+
+                                <img class="gallery__item" src="./assets/images/work/1.jpg" alt="Alt">
+                                <img class="gallery__item" src="./assets/images/work/2.jpg" alt="Alt">
+
+                                <div class="text-block gallery__item">
+                                    <h2 class="text-block__h">Creative floating scroll with amazing parallax effect</h2>
+                                    <p class="text-block__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                        sed do eiusmod tempor amount scrolling.</p>
+                                </div>
+
+                                <img class="gallery__item" src="./assets/images/work/6.jpg" alt="Alt">
+
+                            </div>
+
+                            <div data-speed="1.1" class="gallery__right">
+
+                                <div class="text-block gallery__item">
+                                    <h2 class="text-block__h">Creative floating scroll with amazing parallax effect</h2>
+                                    <p class="text-block__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                        sed do eiusmod tempor amount scrolling.</p>
+                                </div>
+
+                                <img class="gallery__item" src="./assets/images/work/4.jpg" alt="Alt">
+                                <img class="gallery__item" src="./assets/images/work/5.jpg" alt="Alt">
+                                <img class="gallery__item" src="./assets/images/work/3.jpg" alt="Alt">
+
+                            </div>
+
+                        </main>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </main>
 </body>
+
 </html>

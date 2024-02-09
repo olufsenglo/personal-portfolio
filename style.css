@@ -166,5 +166,57 @@ nav ul li a {
     border-radius: calc(var(--border-radius) - 1rem);
 }
 
+/* Carousel */
+.carousel {
+    position: relative;
+    width: 100%;
+    margin-top: 1rem;
+    overflow: hidden;
+}
 
+.carousel__inner {
+    position: relative;
+    display: flex;
+    width: 200%;
+    animation: marquee 10s linear infinite;
+}
 
+.item {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item img {
+    width: 60%;
+}
+
+.left__carousel {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 30%;
+    height: 100%;
+    background: linear-gradient(270deg, transparent, var(--main-div-color));
+    z-index: 1;
+}
+
+.right__carousel {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 30%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, var(--main-div-color));
+    z-index: 1;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translate(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
